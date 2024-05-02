@@ -8,9 +8,6 @@ secretGenerator:
   - name: db-secret
     envs:
       - db.env
-  - name: registry-secret
-    envs:
-      - registry.env
 
 generatorOptions:
   disableNameSuffixHash: true

@@ -13,8 +13,12 @@ spec:
         app: ms-process
     spec:
       containers:
-        - name: server
+        - name: ms-process
           envFrom:
             - secretRef:
                 name: process-secret
           image: jmartinezblanco/meta-ms-process
+          ports:
+            - containerPort: 3000
+              protocol: TCP
+
