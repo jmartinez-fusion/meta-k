@@ -17,4 +17,7 @@ spec:
           envFrom:
             - secretRef:
                 name: organization-secret
+          envFrom:
+            - secretRef:
+                name: db-secret
           image: jmartinezblanco/meta-ms-organization
