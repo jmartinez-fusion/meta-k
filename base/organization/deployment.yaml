@@ -19,6 +19,4 @@ spec:
                 name: organization-secret
             - secretRef:
                 name: db-secret
-            - secretRef:
-                name: registry-secret
           image: jmartinezblanco/meta-ms-organization
