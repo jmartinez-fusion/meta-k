@@ -8,6 +8,9 @@ spec:
     matchLabels:
       app: ms-spa
   template:
+    metadata:
+      labels:
+        app: ms-spa
     spec:
       containers:
       - image: jmartinezblanco/spa-kustomize
