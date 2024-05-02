@@ -6,7 +6,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ms-auth
+      app: ms-spa
   template:
     spec:
       containers:
