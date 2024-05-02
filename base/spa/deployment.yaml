@@ -13,7 +13,7 @@ spec:
         app: ms-spa
     spec:
       containers:
-      - image: jmartinezblanco/spa-kustomize
+      - image: jmartinezblanco/meta-spa
         imagePullPolicy: Always
         name: ms-spa
         ports:
