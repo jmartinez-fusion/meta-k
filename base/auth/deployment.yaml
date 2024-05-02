@@ -13,7 +13,7 @@ spec:
         app: ms-auth
     spec:
       containers:
-        - name: server
+        - name: ms-organization
           envFrom:
             - secretRef:
                 name: auth-secret
