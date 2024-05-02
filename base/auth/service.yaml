@@ -3,9 +3,6 @@ kind: Service
 metadata:
   name: ms-auth
 spec:
-  clusterIP: 172.30.220.36
-  clusterIPs:
-  - 172.30.220.36
   internalTrafficPolicy: Cluster
   ipFamilies:
   - IPv4
