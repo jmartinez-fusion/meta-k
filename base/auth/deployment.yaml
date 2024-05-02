@@ -13,8 +13,13 @@ spec:
         app: ms-auth
     spec:
       containers:
-        - name: ms-organization
+        - name: ms-auth
           envFrom:
             - secretRef:
                 name: auth-secret
+            - secretRef:
+                name: db-secret
           image: jmartinezblanco/meta-ms-auth
+          ports:
+            - containerPort: 3000
+              protocol: TCP

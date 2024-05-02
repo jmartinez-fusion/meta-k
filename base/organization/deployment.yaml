@@ -20,3 +20,6 @@ spec:
             - secretRef:
                 name: db-secret
           image: jmartinezblanco/meta-ms-organization
+          ports:
+            - containerPort: 3000
+              protocol: TCP
