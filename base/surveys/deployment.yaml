@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ms-surveys
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ms-surveys
+  template:
+    metadata:
+      labels:
+        app: ms-surveys
+    spec:
+      containers:
+        - name: server
+          envFrom:
+            - secretRef:
+                name: surveys-secret
+          image: jmartinezblanco/meta-ms-surveys
