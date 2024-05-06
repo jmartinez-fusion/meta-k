@@ -12,7 +12,7 @@ spec:
       labels:
         app: ms-surveys
     spec:
-      imagePuimagePullSecrets:
+      imagePullSecrets:
       - name: oci-registry
       containers:
         - name: ms-surveys

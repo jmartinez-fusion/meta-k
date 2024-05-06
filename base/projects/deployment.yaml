@@ -12,7 +12,7 @@ spec:
       labels:
         app: ms-projects
     spec:
-      imagePuimagePullSecrets:
+      imagePullSecrets:
       - name: oci-registry
       containers:
         - name: ms-projects

@@ -12,7 +12,7 @@ spec:
       labels:
         app: ms-process
     spec:
-      imagePuimagePullSecrets:
+      imagePullSecrets:
       - name: oci-registry
       containers:
         - name: ms-process

@@ -12,7 +12,7 @@ spec:
       labels:
         app: ms-spa
     spec:
-      imagePuimagePullSecrets:
+      imagePullSecrets:
       - name: oci-registry
       containers:
       - image: iad.ocir.io/idwwmbyiyhww/meta-spa:latest
